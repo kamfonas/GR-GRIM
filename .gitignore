@@ -1,0 +1,17 @@
+.DS_Store
+.idea/
+.ipynb*/
+__pycache__
+.texpadtmp/
+.spyproject/
+.vscode
+data/
+save/
+save*/
+runs/
+squad_dataset/*
+notebooks/test*
+notebooks/save*
+notebooks/temp*
+demoSave/*
+demoSave*
