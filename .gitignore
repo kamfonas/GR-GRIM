@@ -16,3 +16,4 @@ notebooks/temp*
 demoSave/*
 demoSave*
 assets/*
+*/*.json
