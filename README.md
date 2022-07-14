@@ -25,3 +25,17 @@ The output from each experiment resides in a subdirectory of one of these two fo
   <dd>This is the analysis of all validations captured within additional fine tuning runs on a <b>BERT-large-uncased whole-word-masking</b> model by Deepset, already pretrained on SQuAD-v2.0</dd>
 </dl>
 
+## Reference
+
+If you use our work, please cite our paper:
+
+@misc{https://doi.org/10.48550/arxiv.2206.14348,
+  doi = {10.48550/ARXIV.2206.14348},  
+  url = {https://arxiv.org/abs/2206.14348},
+  author = {Kamfonas, Michael and Alon, Gabriel},
+  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title = {What Can Secondary Predictions Tell Us? An Exploration on Question-Answering with SQuAD-v2.0},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {Creative Commons Attribution 4.0 International}
+}
