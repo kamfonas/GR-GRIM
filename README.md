@@ -1,6 +1,6 @@
 # Golden Rank (GR) and Golden Rank Interpolated Median (GRIM) 
 
-This repository accompanies the article *What can Secondary Predictions Tell us?: An Exploration on Question-Answering with SQuAD-v2.0* by Michael Kamfonas and Gabriel Alon which can be found [here](https://arxiv.org/abs/2206.14348).
+This repository accompanies the article *What can Secondary Predictions Tell us? An Exploration on Question-Answering with SQuAD-v2.0* by Michael Kamfonas and Gabriel Alon which can be found [here](https://arxiv.org/abs/2206.14348).
 
 Briefly, the Golden Rank is the rank of the best prediction, in predictive probability order, that matches a golden truth answer. For successful predictions, this rank is 0, for failed (secondary)  predictions it is a higher rank, whose magnitude may be attributed either to the example (difficulty, flaw) or by the model (architecture, training). We apply our analysis on results of the question-answering task on the SQuAD-v2.0 dataset. 
 
@@ -34,7 +34,8 @@ If you use our work, please cite our paper:
   doi = {10.48550/ARXIV.2206.14348},  
   url = {https://arxiv.org/abs/2206.14348},
   author = {Kamfonas, Michael and Alon, Gabriel},
-  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  keywords = {Computation and Language (cs.CL), Artificial Intelligence (cs.AI), Machine Learning (cs.LG), 
+              FOS: Computer and information sciences},
   title = {What Can Secondary Predictions Tell Us? An Exploration on Question-Answering with SQuAD-v2.0},
   publisher = {arXiv},
   year = {2022},
