@@ -29,7 +29,8 @@ The output from each experiment resides in a subdirectory of one of these two fo
 
 If you use our work, please cite our paper:
 
-@misc{https://doi.org/10.48550/arxiv.2206.14348,
+```
+  @misc{https://doi.org/10.48550/arxiv.2206.14348,
   doi = {10.48550/ARXIV.2206.14348},  
   url = {https://arxiv.org/abs/2206.14348},
   author = {Kamfonas, Michael and Alon, Gabriel},
@@ -39,3 +40,4 @@ If you use our work, please cite our paper:
   year = {2022},
   copyright = {Creative Commons Attribution 4.0 International}
 }
+```
