@@ -102,6 +102,7 @@ class ResultSet(object):
             arguments: 
                 saveRoot (str): a relative or absolyte directory whose descendent
                                 directories will be searched for N-best files
+                                This distinguishes if these are all evals one training run vs evals of different models.
                 dataset (datasets.arrow_dataset.Dataset): A dataset (e.g. validation) which
                             includes question, answer, id, answers for each of the original examples
                 all_train_evals (Boolean): N-best files are compressed. They are found in directory
