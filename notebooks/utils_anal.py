@@ -1,12 +1,12 @@
 #https://stackoverflow.com/questions/63329657/python-3-7-error-unsupported-pickle-protocol-5
-import pickle5 as pickle
+#import pickle5 as pickle
 import pandas
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from matplotlib.patches import Rectangle
 import urllib
-import wget
+#import wget
 #rename things that arent logs later
 import os
 from pathlib import Path
@@ -329,7 +329,7 @@ def plot_golden_EM_by_rank(grls_np, medians=[], cumulative = False,
     xticks_labels = [ "{:.0f}".format(value, bins[idx+1]) for idx, value in enumerate(bins[:-1])]
     xticks_labels[-1] = xticks_labels[-1]+'+'
     plt.xticks(xticks, labels = xticks_labels)
-    plt.tick_params(axis='x', which='max',length=0)
+    plt.tick_params(axis='x', which='major',length=0)
     A = plt.hist(grls_np.T,bins=maxBins+1,
             weights=np.ones(grls_np.T.shape)*100/m, 
             cumulative=cumulative,align='left',histtype='bar',
