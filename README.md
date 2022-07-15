@@ -27,7 +27,7 @@ The output from each of our experiments resides in a subdirectory of one of thes
 
 ## To try our analysis on your own experiments:
 
-We include the `run_qa.py`, `trainer_qa.py` and `utils_qa.py` files from the Hugging Face QA examples of the transformers package version 4.21.0.dev0 that can be found [here](https://github.com/huggingface/transformers/tree/main/examples/pytorch/question-answering). You can opt to install the current or any other version, but ensure that these three python files are replaced with those compatible with the `transformers` package version you choose to install. Assuming you will want to use the version in this repository, here is what you have to do:
+We include the `run_qa.py`, `trainer_qa.py` and `utils_qa.py` files from the Hugging Face QA examples of the transformers package version 4.21.0.dev0 that can be found [here](https://github.com/huggingface/transformers/tree/main/examples/pytorch/question-answering). You can opt to install the current or any other version, but ensure that these three python files are replaced with those compatible with the `transformers` package version you choose to install. Assuming you want to use  version 4.21.0.dev0, here is what you have to do:
 
 1.  Create a virtual environment either through conda or in python and activate it.
 1.  Install the transformer package release 4.21.0.dev0 or later from source using [these](https://huggingface.co/docs/transformers/installation#installing-from-source) instructions. 
