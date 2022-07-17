@@ -27,14 +27,15 @@ The output from each of our experiments resides in a subdirectory of one of thes
 
 ## To try our analysis on your own experiments:
 
-We include the `run_qa.py`, `trainer_qa.py` and `utils_qa.py` files from the Hugging Face QA examples of the transformers package version 4.21.0.dev0 that can be found [here](https://github.com/huggingface/transformers/tree/main/examples/pytorch/question-answering). You can opt to install the current or any other version, but ensure that these three python files are replaced with those compatible with the `transformers` package version you choose to install. Assuming you want to use  version 4.21.0.dev0, here is what you have to do:
+For convenience, we include the `run_qa.py`, `trainer_qa.py` and `utils_qa.py` files from the [Hugging Face QA examples of the transformers package](https://github.com/huggingface/transformers/tree/main/examples/pytorch/question-answering) version 4.21.0.dev0 without change. You can opt to install the current or any other version, but ensure that the three python files mentioned are replaced with those compatible with the `transformers` version you installed. Assuming you want to use  version 4.21.0.dev0, here is what you have to do:
 
 1.  Create a virtual environment either through conda or in python and activate it.
 1.  Install the transformer package release 4.21.0.dev0 or later from source using [these](https://huggingface.co/docs/transformers/installation#installing-from-source) instructions. 
-2.  Install the torch/cuda combination compatible with your GPU, and add numpy, pandas, seaborn,scikit-learn, matplotlib, datasets. To run the last model in the run_model_evals.sh script you will also need package sentencepiece. If other packages are missing, install them in the environment and retry.  
+2.  Install the torch/cuda combination compatible with your GPU ([this page may be useful](https://pytorch.org/)), and add `numpy`, `pandas`, `seaborn`,`scikit-learn`, `matplotlib`, `datasets`. To run the last model in the `run_model_evals.sh` script you will also need package `sentencepiece` which is used to convert slow tokenizers to fast ones on the fly. This is transparent to you, but if you are missing this package and there is no fast tokenizer for the transformer model you are using you will get an error asking you to install this package. If other packages are missing, install them in the environment until you get no failures.  
 2.  Create the nested directories `save/squad_v2` at the base of your project folder, if not already there.
 3.  We have provided a unix script to run a few validations using different models. Open a terminal and change to the base directory of your project. Run the provided shell script `run_model_evals.sh` (you may have to change its permissions first)
-4.  Make a copy of the notebook `Analysis_using_hf_logs_v5_mk.ipynb` inside the notebooks folder and change the command in the cell under the heading *Create  Class Instance and List Summary Info*   to look like this: `RS = ResultSet("../save/squad_v2",raw_datasets["validation"])` and run all cells.
+4.  Make a copy of the notebook `Analysis_using_hf_logs_v5_mk.ipynb` in the notebooks folder, and change the cell under the heading *Create  Class Instance and List Summary Info* like this: 
+`RS=ResultSet("../save/squad_v2",raw_datasets["validation"])`. Then run all cells.
 
 ## Reference
 
