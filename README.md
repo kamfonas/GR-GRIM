@@ -31,7 +31,7 @@ We include the `run_qa.py`, `trainer_qa.py` and `utils_qa.py` files from the Hug
 
 1.  Create a virtual environment either through conda or in python and activate it.
 1.  Install the transformer package release 4.21.0.dev0 or later from source using [these](https://huggingface.co/docs/transformers/installation#installing-from-source) instructions. 
-2.  Install the torch/cuda combination compatible with your GPU, and add numpy, pandas, seaborn,scikit-learn, matplotlib, datasets. To run the last model in the rin_model_evals.sh script you will also need package sentencepiece. If other packages are missing, install them in the environment and retry.  
+2.  Install the torch/cuda combination compatible with your GPU, and add numpy, pandas, seaborn,scikit-learn, matplotlib, datasets. To run the last model in the run_model_evals.sh script you will also need package sentencepiece. If other packages are missing, install them in the environment and retry.  
 2.  Create the nested directories `save/squad_v2` at the base of your project folder, if not already there.
 3.  We have provided a unix script to run a few validations using different models. Open a terminal and change to the base directory of your project. Run the provided shell script `run_model_evals.sh` (you may have to change its permissions first)
 4.  Make a copy of the notebook `Analysis_using_hf_logs_v5_mk.ipynb` inside the notebooks folder and change the command in the cell under the heading *Create  Class Instance and List Summary Info*   to look like this: `RS = ResultSet("../save/squad_v2",raw_datasets["validation"])` and run all cells.
